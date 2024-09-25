@@ -36,4 +36,22 @@ public:
         }
         return v;
     }
+
+    // To get largest value with cumulative sum less than or equal to x
+    // For smallest version, pass x-1 and add 1 to result
+    T getind(int x)
+    {
+        T idx = 0, mask = n;
+        while (mask && idx < n)
+        {
+            int t = idx+mask;
+            if (t >= fw[t]) 
+            {
+                idx = t;
+                x -= tree[t];
+            }
+            mask >>= 1;
+        }
+        return idx;
+    }
 };
