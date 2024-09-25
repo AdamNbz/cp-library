@@ -5,6 +5,13 @@
         "algorithm": "cpp",
         "vector": "cpp",
         "iosfwd": "cpp",
-        "__locale": "cpp"
+        "__locale": "cpp",
+        "execution": "cpp",
+        "array": "cpp",
+        "future": "cpp",
+        "istream": "cpp",
+        "locale": "cpp",
+        "tuple": "cpp",
+        "variant": "cpp"
     }
 }
