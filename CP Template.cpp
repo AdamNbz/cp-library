@@ -1,9 +1,11 @@
 /*
 Author : Nguyen Vo Ngoc Bao
 School : University of Information Technology, VNU-HCM
-( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )( ͡° ͜ʖ ͡° )
 */
 #include <bits/stdc++.h>
+
+#pragma GCC optimize("Ofast")
+#pragma GCC optimize("unroll-loops")
 
 #define fi first
 #define se second
@@ -37,6 +39,9 @@ typedef vector<vector<bool> > vvb;
 typedef vector<string> vs;
 typedef vector<vs > vvs;
 
+template<typename T> void ckmin(T& x, T y) {if (x>y) x = y;}
+template<typename T> void ckmax(T& x, T y) {if (x<y) x = y;}
+
 int pop_cnt(ll mask) { return __builtin_popcountll(mask); }
 int ctz(ull mask) { return __builtin_ctzll(mask); }
 int logOf(ull mask) { return 63 - __builtin_clzll(mask); }
@@ -46,14 +51,13 @@ const ll inf = (ll)(2e18);
 
 void sol()
 {
-
+    
 }
 
 int32_t main()
 {
     io();
-    // int t; cin >> t;
-    // while (t--) 
-        sol();
+    int t; cin >> t;
+    while (t--) sol();
     cerr << "\nTime elapsed: " << 1000*clock()/CLOCKS_PER_SEC << "ms\n";
 }
