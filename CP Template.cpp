@@ -17,6 +17,7 @@ School : University of Information Technology, VNU-HCM
    #define dbg(...) 
 #endif
 
+#define nbzzz signed main
 #define fi first
 #define se second
 #define el '\n'
@@ -66,7 +67,7 @@ void sol()
     
 }
 
-int32_t main()
+nbzzz()
 {
     io();
     int t; cin >> t;
