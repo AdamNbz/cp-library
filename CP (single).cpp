@@ -7,6 +7,17 @@ School : University of Information Technology, VNU-HCM
 #pragma GCC optimize("Ofast")
 #pragma GCC optimize("unroll-loops")
 
+#ifndef ONLINE_JUDGE
+   #if defined(__APPLE__)
+      #include </Users/home/Documents/nbz_lib/debug.h>
+   #elif defined(_WIN32) || defined(_WIN64)
+      #include <C:/Users/Admin/OneDrive/Documents/nbz_lib/debug.h>
+   #endif
+#else
+   #define dbg(...) 
+#endif
+
+#define nbzzz signed main
 #define fi first
 #define se second
 #define el '\n'
@@ -41,23 +52,24 @@ typedef vector<vs > vvs;
 
 template<typename T> void ckmin(T& x, T y) {if (x>y) x = y;}
 template<typename T> void ckmax(T& x, T y) {if (x<y) x = y;}
+mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());
 
 int pop_cnt(ll mask) { return __builtin_popcountll(mask); }
 int ctz(ull mask) { return __builtin_ctzll(mask); }
 int logOf(ull mask) { return 63 - __builtin_clzll(mask); }
+int parity(ull mask) { return __builtin_parityll(mask); }
 
 const ll mod = (ll)(1e9+7);
-const ll inf = (ll)(2e18);
+const ll inf = numeric_limits<ll>::max();
 
 void sol()
 {
     
 }
 
-int32_t main()
+nbzzz()
 {
     io();
-    int t; cin >> t;
-    while (t--) sol();
+    sol();
     cerr << "\nTime elapsed: " << 1000*clock()/CLOCKS_PER_SEC << "ms\n";
 }

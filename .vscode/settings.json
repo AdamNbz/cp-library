@@ -1,5 +1,8 @@
 {
     "files.associations": {
+        "*.sqlbook": "sql",
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
         "limits": "cpp",
         "valarray": "cpp",
         "algorithm": "cpp",
@@ -12,6 +15,7 @@
         "istream": "cpp",
         "locale": "cpp",
         "tuple": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "scoped_allocator": "cpp"
     }
 }
