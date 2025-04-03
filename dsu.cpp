@@ -1,17 +1,9 @@
-/*
-Author : Nguyen Vo Ngoc Bao
-School : University of Information Technology, VNU-HCM
-*/
-
 template <typename T>
 void make(T v)
 {
     par[v] = v;
-    //implementation by size
-    //size[v] = 1;
-    
-    //implementation by rank
-    //rank[v] = 0;
+    //size[v] = 1; - implementation by size
+    //rank[v] = 0; - implementation by rank
 }
 
 template <typename T>

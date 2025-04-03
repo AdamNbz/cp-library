@@ -1,8 +1,3 @@
-/*
-Author : Nguyen Vo Ngoc Bao
-School : University of Information Technology, VNU-HCM
-*/
-
 template<typename T>
 T mod(T a, T b)
 {

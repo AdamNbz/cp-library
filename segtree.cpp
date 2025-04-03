@@ -1,8 +1,3 @@
-/*
-Author : Nguyen Vo Ngoc Bao
-School : University of Information Technology, VNU-HCM
-*/
-
 ll st[4*LimN];
 
 template<typename T>
