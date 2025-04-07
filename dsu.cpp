@@ -1,39 +1,21 @@
-template <typename T>
-void make(T v)
+struct dsu
 {
-    par[v] = v;
-    //size[v] = 1; - implementation by size
-    //rank[v] = 0; - implementation by rank
-}
-
-template <typename T>
-T find(T v)
-{
-    if (v == par[v]) return v;
-    return par[v] = find(par[v]);
-}
-
-template <typename T>
-void merge(T a, T b)
-{
-    a = find(a);
-    b = find(b);
-    if (a != b) par[b] = a;
-    /* Implementation by size
-    if (a != b)
+    int n;
+    vector<int> par, s, r;
+    dsu(int _n): n(_n), par(n), s(n, 1), r(n, 0) { iota(all(par), 0); }
+    int get(int u) { return u == par[u] ? u : par[u] = get(par[u]); }
+    int disjointSet() { return n; }
+    int sizes(int u) { return s[get(u)]; }
+    bool same(int u, int v) { return get(u) == get(v); }
+    bool unite(int u, int v) 
     {
-        if (size[a] < size[b]) swap(a, b);
-        par[b] = a;
-        size[a] += size[b];
+        u = get(u), v = get(v);
+        if (u == v) return;
+        if (r[u] < r[v]) swap(u, v);
+        p[v] = u;
+        r[u] += r[u] == r[v];
+        s[u] += s[v];
+        --n;
+        return 1;
     }
-    */
-   
-   /* Implementation by rank
-   if (a != b)
-   {
-        if (rank[a] < rank[b]) swap(a, b);
-        par[b] = a;
-        if (rank[a] == rank[b]) rank[a]++;
-   }
-   */
-}
+};

@@ -1,21 +1,23 @@
 {
-    "files.associations": {
-        "*.sqlbook": "sql",
-        "*.ndjson": "jsonl",
-        "*.dbclient-js": "javascript",
-        "limits": "cpp",
-        "valarray": "cpp",
-        "algorithm": "cpp",
-        "vector": "cpp",
-        "iosfwd": "cpp",
-        "__locale": "cpp",
-        "execution": "cpp",
-        "array": "cpp",
-        "future": "cpp",
-        "istream": "cpp",
-        "locale": "cpp",
-        "tuple": "cpp",
-        "variant": "cpp",
-        "scoped_allocator": "cpp"
-    }
+  "files.associations": {
+    "*.sqlbook": "sql",
+    "*.ndjson": "jsonl",
+    "*.dbclient-js": "javascript",
+    "limits": "cpp",
+    "valarray": "cpp",
+    "algorithm": "cpp",
+    "vector": "cpp",
+    "iosfwd": "cpp",
+    "__locale": "cpp",
+    "execution": "cpp",
+    "array": "cpp",
+    "future": "cpp",
+    "istream": "cpp",
+    "locale": "cpp",
+    "tuple": "cpp",
+    "variant": "cpp",
+    "scoped_allocator": "cpp",
+    "complex": "cpp",
+    "memory": "cpp"
+  }
 }
