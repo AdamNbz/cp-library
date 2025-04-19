@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "files.associations": {
     "*.sqlbook": "sql",
     "*.ndjson": "jsonl",
@@ -21,3 +22,62 @@
     "memory": "cpp"
   }
 }
+=======
+    "files.associations": {
+        "*.sqlbook": "sql",
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
+        "iostream": "cpp",
+        "random": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp",
+        "map": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp",
+        "vector": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "limits": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "__split_buffer": "cpp",
+        "queue": "cpp",
+        "span": "cpp",
+        "iosfwd": "cpp",
+        "barrier": "cpp",
+        "latch": "cpp",
+        "semaphore": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__tree": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "__locale": "cpp",
+        "ios": "cpp",
+        "__node_handle": "cpp",
+        "memory": "cpp",
+        "fstream": "cpp",
+        "future": "cpp",
+        "istream": "cpp",
+        "optional": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "tuple": "cpp",
+        "variant": "cpp",
+        "execution": "cpp",
+        "stack": "cpp",
+        "type_traits": "cpp",
+        "climits": "cpp",
+        "numeric": "cpp",
+        "*.tcc": "cpp",
+        "system_error": "cpp"
+    }
+}
+>>>>>>> Stashed changes
