@@ -1,32 +1,27 @@
-/*
-Author : Nguyen Vo Ngoc Bao
-School : University of Information Technology, VNU-HCM
-*/
-
 template <typename T>
 class Fenwick {
 public:
     vector<T> fw;
     int n;
 
-    Fenwick(int _n) : n(_n + 1) 
+    Fenwick(int _n) : n(_n + 1)
     {
         fw.resize(n);
     }
 
-    void modify(int x, T v) 
+    void modify(int x, T v)
     {
-        while (x <= n) 
+        while (x <= n)
         {
             fw[x] += v;
             x += (x & -x);
         }
     }
 
-    T get(int x) 
+    T get(int x)
     {
         T v{};
-        while (x > 0) 
+        while (x > 0)
         {
             v += fw[x];
             x -= (x & -x);
@@ -40,10 +35,10 @@ public:
         while (mask && idx < n)
         {
             int t = idx+mask;
-            if (t >= fw[t]) 
+            if (t >= fw[t])
             {
                 idx = t;
-                x -= tree[t];
+                x -= fw[t];
             }
             mask >>= 1;
         }
